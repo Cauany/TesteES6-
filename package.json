@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "babel ./main.js -o bundle.js"
   },
   "author": "Cauany Souza",
   "license": "ISC",
   "dependencies": {
     "@babel/cli": "^7.10.0",
+    "@babel/core": "^7.10.0",
     "@babel/preset-env": "^7.10.0"
   }
 }

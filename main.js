@@ -1,1 +1,7 @@
-alert('Test')
+alert('teste')
+
+class Teste {
+    metodo(){
+        
+    }
+}
