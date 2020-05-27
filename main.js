@@ -1,23 +1,11 @@
-class List {
-    constructor(){
-        this.data = []
-    }
+const usuario = {
+    nome: 'greg',
+    idade: 25,
+    jogos: {
+        volei: 'volei de areia',
+        agua: 'natação',
+    },
 }
+const { idade, jogos: { volei }, nome } = usuario
 
-class TodoList extends List {
-    constructor(){
-        this.todos = []
-    }
-
-    addTodo(){
-        this.todos.push('Novo todo')
-        console.log(this.todos)
-    }
-}
-
-
-const MinhaLista = new TodoList()
-
-document.getElementById('novotodo').onclick = () =>{
-    MinhaLista.addTodo()
-}
+console.log(volei, idade)
