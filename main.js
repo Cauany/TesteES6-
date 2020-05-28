@@ -1,3 +1,19 @@
+//AXIOS
+const axios = require('axios')
+
+async function conexaoApi(username){
+    try{
+        const response = await axios.get(`https://api.github.com/users/${username}`)
+        console.log(response.data.login)
+    }catch(err){
+        console.warn('Erro na api')
+    }
+}
+
+conexaoApi('Cauany')
+
+
+
 //ATIVIDADE !
 // class Usuario {
 //     constructor(email,senha){
@@ -134,11 +150,11 @@
 // console.log(mostraInfo(user))
 
 //ATIVIDADE 5
-const arr = [1, 2, 3, 4, 5, 6]
+// const arr = [1, 2, 3, 4, 5, 6]
 
 
 
-console.log(arr)
+// console.log(arr)
 
 
 
