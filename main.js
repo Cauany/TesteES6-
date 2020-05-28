@@ -12,8 +12,6 @@ async function conexaoApi(username){
 
 conexaoApi('Cauany')
 
-
-
 //ATIVIDADE !
 // class Usuario {
 //     constructor(email,senha){
