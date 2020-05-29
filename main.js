@@ -1,16 +1,18 @@
 //AXIOS
 const axios = require('axios')
 
-async function conexaoApi(username){
+async function conexaoApi(){
     try{
-        const response = await axios.get(`https://api.github.com/users/${username}`)
-        console.log(response.data.login)
+        const response = await axios.get(`https://unogs-unogs-v1.p.rapidapi.com/api.cgi`)
+        console.log(response.data)
     }catch(err){
         console.warn('Erro na api')
     }
 }
 
-conexaoApi('Cauany')
+conexaoApi()
+
+
 
 //ATIVIDADE !
 // class Usuario {
